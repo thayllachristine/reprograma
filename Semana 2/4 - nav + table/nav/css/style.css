@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #4A4A4A;
+    width: 900px;
+}
+
+
+.topbar {
+    width: 100%;
+    padding: 10px;
+
+    display: inline-block;
+    text-align: center;
+}
+
+.topbar__div {
+    vertical-align: center;
+}
+
+
+.logo {   
+    padding-right: 325px;
+    display: inline-block;
+}
+
+
+.menu {
+    display: inline-block;
+    list-style: none;    
+}
+
+.menu li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.menu__itens {
+    text-transform: uppercase;
+    text-decoration: none;
+
+    font-size: 14px;
+
+    color: black;
+}
+
+
+hr {
+    width: 750px;
+}
+
+
+.st-section {
+    width: 85%;
+}
+
+
+.blog_titulo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    font-weight: lighter;
+    font-size: 16px;
+    
+    color: #9013FE;
+}
+
+.blog_autora {
+    width: 150px;
+    height: 312.5px;
+    
+    border: 1px solid #CCCCCC;
+    
+    display: inline-block;
+
+    text-align: center;
+    font-size: 12px;
+}
+
+.blog_autora img {
+    margin-top: 50%;
+}
+
+.blog_conteudo {
+    width: 600px;
+    height: 350px;
+    
+    margin-left: 10px;
+    
+    display: inline-block;
+
+    vertical-align: top;
+}
+
+.blog_conteudo h1 {
+    margin-top: 0px;
+}
+
+.blog_conteudo_artigo img {
+    width: 595px;
+}
+
+
+footer {
+    margin-top: 10px;
+    
+    font-size: 10px;    
+    text-align: center;
+}
