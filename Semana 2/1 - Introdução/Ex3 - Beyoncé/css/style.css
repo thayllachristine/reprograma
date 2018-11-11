@@ -1,0 +1,53 @@
+/* Propriedades gerais */
+body {
+  background-image: url(../img/background.png);
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+h2 {
+  color: #5D1277;
+}
+
+p {
+  color: #4F4F4F;
+  font-size: 16px;
+}
+
+.div-geral {
+  background-color: #FFFFFF; 
+  
+  width: 440px;
+  height: 395px;  
+
+  padding: 35px 10px;
+  margin: 0 auto;
+  margin-top: 50px;
+  
+  border: 1px solid #5D1277;
+  border-radius: 10px;
+
+  box-shadow: 2px 2px 15px #4F4F4F;
+
+  text-align: center; 
+}
+
+.div-infos img {
+  width: 200px;
+}
+
+.div-icons img {
+  width: 55px;
+
+  margin: 15px;
+}
+
+footer {
+  text-align: center;
+  color: #4F4F4F;
+  font-size: 12px;
+
+  margin: 50 auto;
+
+  font-weight: bold;
+}
