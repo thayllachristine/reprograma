@@ -1,0 +1,505 @@
+/* Geral */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.conteudo {
+    margin: 0px;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+/* Navegacao/Menu */
+.container {
+    width: 920px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.navbar {
+    background-color: #a0bed0;
+    /* height: 80px; */
+    position: fixed;
+    z-index: 9999999999;
+    left: 0;
+    right: 0;
+}
+
+.navbar__lista {
+    /* border: 1px solid black; */
+    background-color: #a0bed0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar__lista img {
+    display: none;
+}
+
+.navbar__lista_item {
+    padding: 32px 25px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.lista_item-link {
+    text-decoration: none;
+    font-weight: bold;   
+    color: #ffffff;
+}
+
+/* Header : Conteudo Principal */
+.header {
+    background-image: url(../img/foto-banner.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    height: 550px;
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;    
+}
+
+.header__principal {
+    width: 960px;
+}
+
+.header__principal_titulo {
+    margin: 150px 0 1px 0;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .7);
+    /* border: 1px solid salmon; */
+}
+
+.header__principal_subtitulo {
+    margin-bottom: 50px;
+    font-size: 20px;
+    text-align: center;
+    /* border: 1px solid salmon; */
+}
+
+.header__principal_btn {
+    padding: 17.5px 40px;
+    border: 1px solid #829dad;
+    border-radius: 5px;
+    
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    background-color: #829dad;
+    color: #fff;
+}
+
+/* Section : Sobre */
+.sobre {
+    height: 150px;
+    
+    display: flex;
+    justify-content: center;
+
+    background-color: #000000;
+    color: #fff;
+}
+
+.sobre__div {
+    width: 960px;
+    height: 125px;
+    margin: auto;
+    text-align: center;
+}
+
+.sobre__div_titulo,
+.sobre__div_texto {
+    margin: 7.5px;
+}
+
+.sobre__div_titulo {
+    font-size: 18px;
+}
+
+.sobre__div_texto {
+    font-size: 14px;
+}
+
+/* Section : Destinos/Destaque */
+.destinos__destaque_siberia {
+    width: 960px;
+    margin: 20px auto;
+    display: flex; 
+    /* border: 1px solid black; */
+}
+
+.siberia_img img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    /* border: 1px solid black; */
+}
+
+.siberia_texto {
+    margin: auto 1vw;
+    font-size: 14px;
+    /* border: 1px solid black; */
+}
+
+.siberia_texto_h2 {
+    margin-bottom: .10px;
+}
+
+/* Section : Destinos/Outros */
+.destinos__outros {
+    width: 960px;
+    height: 650px;
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+.destinos__outros_groelandia,
+.destinos__outros_antartida {
+    display: flex;
+    color: #fff;
+}
+
+.groelandia_texto,
+.antartida_texto {
+    margin: 100px 20px;
+    font-size: 14px;
+}
+
+.groelandia_texto_h2,
+.antartida_texto_h2 {
+    margin-bottom: 10px;
+}
+
+.groelandia_img img,
+.antartida_img img {
+    width: 480px;
+    height: auto;
+}
+
+/* Footer/Rodapé  */
+.footer {
+    margin-top: 2.5vw;
+    padding: 2.5vw 0 2.5vw 0;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+}
+
+.footer__texto_tel, 
+.footer__texto_copy {
+    font-size: 13px;
+}
+
+.footer__link_img {
+    width: 40px;
+    margin: 2.5vw 1vw;
+}
+
+.texto_cor {
+    color: rgba(255,255,255,.7);
+}
+
+/* --------------------------------------------------- */
+/* Resolução de tela : 768px ~ 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* [768px ~ 1023px] Navegacao/Menu */
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        /* border: 1px solid black; */
+    }
+    
+    /* [768px ~ 1023px] Header : Conteudo Principal */
+    .header__principal_titulo {
+        font-size: 85px;
+    }
+    
+    /* [768px ~ 1023px] Section : Sobre */
+    .sobre {
+        height: 135px;
+    }
+
+    .sobre__div {
+        width: 100%;
+        height: auto;
+    }
+
+    .sobre__div_titulo {
+        font-size: 16px;
+    }
+    
+    .sobre__div_texto {
+        font-size: 14px;
+    }
+
+    /* [768px ~ 1023px] Section : Destinos/Destaque */
+    .destinos__destaque_siberia {
+        width: 95%;
+        display: block;        
+    }
+
+    .siberia_img img {
+        width: 100%;
+    }
+
+    .siberia_texto {
+        padding: 5px;
+        text-align: center;
+    }
+
+    /* [768px ~ 1023px] Section : Destinos/Outros */
+    .destinos__outros {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        background-color: #000000;
+    }
+
+    .destinos__outros_groelandia,
+    .destinos__outros_antartida {
+        display: block;
+    }
+  
+    .destinos__outros_antartida {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .groelandia_img img,
+    .antartida_img img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .groelandia_texto,
+    .antartida_texto {
+        margin: 15px 20px;
+        text-align: center;
+    }
+
+    .groelandia_texto_h2,
+    .antartida_texto_h2 {
+        margin-bottom: 5px;
+    }
+
+    /* [768px ~ 1023px] Footer/Rodapé */
+}
+
+/* --------------------------------------------------- */
+/* Resolução de tela : 481px ~ 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    /* [481px ~ 767px] Navegacao/Menu */
+    .container {
+        width: 90%;
+        margin: auto;
+        /* border: 1px solid black; */
+    }
+  
+    /* [481px ~ 767px] Header : Conteudo Principal  */
+    .header__principal_titulo {
+        font-size: 75px;
+    }
+  
+    /* [481px ~ 767px] Section : Sobre */
+    .sobre {
+        height: 135px;
+    }
+
+    .sobre__div {
+        width: 100%;
+        height: auto;
+    }
+
+    .sobre__div_titulo {
+        font-size: 16px;
+    }
+    
+    .sobre__div_texto {
+        font-size: 14px;
+    }
+
+    /* [481px ~ 767px] Section : Destinos/Destaque */
+    .destinos__destaque_siberia {
+        width: 95%;
+        display: block;        
+    }
+
+    .siberia_img img {
+        width: 100%;
+    }
+
+    .siberia_texto {
+        padding: 5px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    /* [481px ~ 767px] Section : Destinos/Outros */
+    .destinos__outros {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        background-color: #000000;
+    }
+    
+    .destinos__outros_groelandia,
+    .destinos__outros_antartida {
+        display: block;
+    }
+
+    .destinos__outros_antartida {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .groelandia_img img,
+    .antartida_img img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .groelandia_texto,
+    .antartida_texto {
+        margin: 15px 10px;
+        text-align: center;
+    }
+
+    .groelandia_texto_h2,
+    .antartida_texto_h2 {
+        margin-bottom: 5px;
+    }
+
+    .groelandia_texto > article,
+    .antartida_texto > article {
+        font-size: 13px;
+    }
+
+    /* [481px ~ 767px] Footer/Rodapé */
+}
+
+/* --------------------------------------------------- */
+/* Resolução de tela : 320px ~ 480px */
+@media (min-width: 320px) and (max-width: 480px) {
+    /* [320px ~ 480px] Navegacao/Menu */
+    .container {
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid orangered; */
+    }
+
+    .navbar__lista_item {
+        display: none;
+    }
+
+    .navbar__lista img {
+        width: 80px;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        /* border: 1px solid blue; */
+    }
+    
+    /* [320px ~ 480px] Header : Conteudo Principal */
+    .header__principal_titulo {
+        font-size: 60px;
+    }
+
+    .header__principal_subtitulo {
+        font-size: 15px;
+    }
+
+    /* [320px ~ 480px] Section : Sobre */
+    .sobre__div {
+        width: 100%;
+        height: auto;
+    }
+
+    .sobre__div_titulo {
+        font-size: 16px;
+    }
+    
+    .sobre__div_texto {
+        font-size: 12px;
+    }
+
+    /* [320px ~ 480px] Section : Destinos/Destaque */
+    .destinos__destaque_siberia {
+        width: 95%;
+        display: block;
+    }
+
+    .siberia_img img {
+        width: 100%;
+    }
+
+    .siberia_texto {
+        padding: 5px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    /* [320px ~ 480px] Section : Destinos/Outros  */
+    .destinos__outros {
+        width: 95%;
+        height: auto;      
+        margin: 0 auto;
+        background-color: #000000;
+    }
+
+    .destinos__outros_groelandia,
+    .destinos__outros_antartida {
+        display: block;
+    }
+
+    .destinos__outros_antartida {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .groelandia_img img,
+    .antartida_img img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .groelandia_texto,
+    .antartida_texto {
+        margin: 10px 10px;
+        font-size: 12.5px;
+        text-align: center;
+    }
+
+    /* [320px ~ 480px] Footer/Rodapé */
+    .footer__link > img {
+        width: 35px;
+    }
+
+    .footer__texto_tel,
+    .footer__texto_copy {
+        font-size: 10px;
+    }
+}
+
+/* --------------------------------------------------- */
+@media (max-width: 320px) {
+    .header__principal_subtitulo {
+        margin-bottom: 35px;
+    }
+
+    .header__principal_btn {
+        padding: 12px 24px;
+        font-size: 12px; 
+    }
+}
