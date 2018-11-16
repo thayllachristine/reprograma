@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #4A4A4A;
+}
+
+.cabecalho {
+    text-align: center;
+}
+
+.formulario {
+    width: 500px;
+}
+
+.formulario__texto,
+.formulario__senha,
+.formulario__opcoes,
+.formulario__opcao,
+.formulario__select,
+.formulario__numero,
+.formulario__comentario {
+    /* border: 1px solid black; */
+    vertical-align: center;  
+}
+
+
+.div_label, 
+.div_input,
+.div_paragrafo,
+.div_checkbox,
+.div_radio,
+.div_dropbox,
+.div_textarea {
+    display: inline-block;
+    padding: 3px;
+    /* border: 1px solid black; */
+}
+
+.text-peq,
+.text-grand {
+    width: 250px;    
+    vertical-align: top;
+
+    text-align: right;
+}
+
+.formulario__botoes {
+    padding: 10px;
+
+    text-align: center;
+}
+
+.botao1 {
+    margin: 0 10px; 
+    padding: 10px 15px;
+    border: 1px solid #4A4A4A;
+    border-radius: 2px;
+    
+    color: #4A4A4A;
+    background-color: #999999;
+}
+
+.botao2 {
+    margin: 0 10px;
+    padding: 10px 15px;
+    border: 1px solid #3A006D;
+    border-radius: 2px;
+
+    color: #ffffff;
+    background-color: #9013FE;
+}
+
+.btn {
+    vertical-align: left;
+}

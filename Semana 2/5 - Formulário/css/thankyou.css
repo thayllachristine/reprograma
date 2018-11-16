@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    
+    color: #4A4A4A;
+}
+
+
+.tks-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.span-bold {
+  color: #9013FE;  
+}

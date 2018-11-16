@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+
+        <title>Formulário</title>
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <h2>Formulário</h2>
+        </header>
+
+        <section class="formulario all">
+            <form action="thankyou.html" method="POST">
+
+                <div class="formulario__texto">
+                    <div class="div_label text-peq">
+                        <label for="name">Texto</label>
+                    </div>
+                    <div class="div_input">
+                        <input type="text" name="name">
+                    </div>    
+                </div>
+
+                <div class="formulario__senha">
+                    <div class="div_label text-peq">
+                        <label for="senha">Senha</label>
+                    </div>
+                    <div class="div_input">
+                        <input type="password" name="senha">
+                    </div>    
+                </div>
+
+                <div class="formulario__opcoes">
+                    <div class="div_paragrafo text-grand">
+                        <p>Escolha uma ou múltiplas opções</p>
+                    </div>
+                    <div class="div_checkbox"> 
+                        <input type="checkbox" name="opcoes" value="mulher">
+                        <label for="mulher">Mulher</label>
+                        <br>
+                        <input type="checkbox" name="opcoes" value="poderosa">
+                        <label for="poderosa">Poderosa</label>
+                        <br>
+                        <input type="checkbox" name="opcoes" value="linda">
+                        <label for="linda">Linda</label>
+                        <br>
+                        <input type="checkbox" name="opcoes" value="maravilhosa">
+                        <label for="maravilhosa">Maravilhosa</label>
+                    </div>
+                </div>
+
+                <div class="formulario__opcao">
+                    <div class="div_paragrafo text-grand">
+                        <p>Escolha uma opção</p>
+                    </div>
+                    <div class="div_radio">
+                        <input type="radio" name="forca" value="forca">
+                        <label for="forca">Super força</label>
+                        <br>
+                        <input type="radio" name="invisivel" value="invisivel">
+                        <label for="invisivel">Ser invisível</label>
+                        <br>
+                        <input type="radio" name="mente" value="mente">
+                        <label for="mente">Ler mentes</label>
+                        <br>
+                        <input type="radio" name="velocidade" value="velocidade">
+                        <label for="velocidade">Super velocidade</label>
+                    </div>
+                </div>    
+                    
+                <div class="formulario__select">
+                    <div class="div_label text-grand">
+                        <label for="nada">Selecione dropdown</label>
+                    </div>
+                    <div class="div_dropbox">    
+                        <select name="nada"></select>
+                    </div>
+                </div>  
+
+                <div class="formulario__numero">
+                    <div class="div_label text-grand">
+                        <label for="valor">Escolha um valor</label>
+                    </div>
+                    <div class="div_input">
+                        <input type="number" name="valor">
+                    </div>
+                </div>    
+
+                <div class="formulario__comentario">
+                    <div class="div_label text-peq">
+                        <label for="comentario">Comentários</label>
+                    </div>    
+                    <div class="div_textarea">
+                        <textarea name="comentario" cols="29" rows="10"></textarea>
+                    </div>
+                </div>   
+
+                <div class="formulario__botoes btn">
+                    <input type="submit" value="Reset" name="reset" class="botao1">
+                    <input type="submit" value="Submit" name="submit" class="botao2">
+                </div>
+            </form> 
+        </section>
+    </body>
+</html>
