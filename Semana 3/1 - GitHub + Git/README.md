@@ -46,12 +46,14 @@ Comandos | O que faz?
 Comandos + Atributos | O que faz?
 --- | ---
 `dir` | mostra as pastas/arquivos
+`find` | mostra as pastas/arquivos
 `mkdir` | criar nova pasta
 `rmdir`| excluir pasta
 `clear` | limpar todas as infos que estão em tela
 `start` | abre o CMD
 `start .` | abre o Explorer
 `code nome-arquivo.ext` | cria um novo arquivo
+`history -c` | deleta histórico do Git Bash
 `git commit --amend -m ""` | altera a mensagem do último commit
 `git config --global user.name ""` | para adicionar/verificar o usuário  
 `git config --global user.email ""` | adicionar/verificar o e-mail
