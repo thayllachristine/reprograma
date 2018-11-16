@@ -1,0 +1,271 @@
+/* [420px] : index.html  */
+/* Geral */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Body */
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+
+/* Cotainer : Ajustes - Header */
+.ajs_header {
+    max-width: 100%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* Container : Ajustes - Conteudo */
+.ajs_conteudo {
+    width: 65%;
+    margin: 0 auto;
+    /* border: 1px solid ; */
+}
+
+
+/* Menu/Navegacao */
+.navbar {
+    background-color: #674582;
+  
+    position: fixed;
+    z-index: 999;
+
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 250px;  
+}
+
+.menu__itens {
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+}
+
+.itens_texto,
+.itens_icone {
+    list-style: none; 
+    display: none;
+}
+
+.itens_mobile {
+    list-style: none;
+}
+
+.logo, 
+.menu {
+    width: 45%;
+    /* border: 1px solid white; */
+}
+
+
+/* Header/Banner */
+.header {
+    background-image: url(../img/bg-banner-claro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding-bottom: 40px;
+}
+
+.header__titulo { 
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+.header__subtitulo > p {
+    font-size: .85rem;
+    margin: 2.5% 0 5% 0;
+}
+
+.grupo_btn {
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #fff;
+    background-color: #C083B9;
+
+    font-size: .75rem;
+    font-weight: bold;
+
+    border: 1px solid #C083B9;
+    border-radius: 5px; 
+    padding: 12.5px 15px;
+}
+
+
+/* Main : Conteudo Principal  */
+.main {    
+    text-align: center;
+    margin-top: 20px;
+    /* border: 1px solid; */
+}
+
+.main__chamada {
+    margin: 10px 0;
+
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: .60rem;
+    color: #63458A;
+}
+
+.main__conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    /* border: 1px solid; */
+}
+
+.conteudo__artista {
+    width: 49%;
+    margin: 2.5px 0;
+    /* border: 1px solid; */
+}
+
+.artista_foto img {
+    max-width: 100%;
+    width: 50%; 
+
+    margin: 10px;
+
+    border: 1px solid #63458A;
+    border-radius: 5px;
+
+    background-color: #63458A;
+}
+
+.artista_nome {
+    font-size: 11px;
+    font-weight: lighter;
+}
+
+
+/* Footer/Rodape */
+.footer {
+    background-color: #323534;
+    color: #fff;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.princ__coluna {
+    font-size: 9.5px;
+    padding: 10px 0;
+    /* border: 1px solid; */
+}
+
+.coluna_itens {
+    list-style: none;
+}
+
+.footer__logo img {
+    max-width: 100%;
+    width: 150px;
+}
+
+.footer__icone_fb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;    
+    /* border: 1px solid red; */
+}
+
+.footer__icone_fb img {
+    max-width: 100%;
+    width: 20px;
+}
+
+.footer__cc {
+    background-color: #292A2A;
+    height: 30px;
+    padding: 10px 0;
+}
+
+.cc_infos {
+    font-size: 8.5px;
+    /* border: 1px solid red; */
+}
+
+
+/* [768px] : Tablet */
+@media (min-width: 768px){
+    /* [768px Main : Conteudo Principal  */
+    .conteudo__artista {
+        width: 33.3%;
+    } 
+} 
+
+
+/* [1024px] : Desktop  */
+@media (min-width: 1024px) {  
+    /* [1024px] : Menu/Navegacao */
+    .navbar {
+        padding: 0 150px;
+    }
+    
+    .menu, 
+    .menu__itens { 
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .itens_texto,
+    .itens_icone {
+        display: flex;
+        list-style: none;
+        margin: 0 7.5px; 
+    }
+
+    .itens_texto {
+        font-size: .65rem;
+        text-transform: uppercase;
+        color: #fff;
+        margin-left: 15x;
+    }
+
+    .itens_mobile {
+        display: none;
+    }
+
+    
+    /* [1024px] : Footer/Rodape */
+    .footer__princ {   
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        /* border: 1px solid blue;  */
+    }
+
+    .princ__coluna {
+        width: 33.3%;
+        /* border: 1px salmon solid; */
+    }
+}

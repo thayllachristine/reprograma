@@ -1,0 +1,364 @@
+/* [420px] : demi-lovato.html */
+/* Geral */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Body */
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+
+/* Container : Ajustes */
+.ajs_container {
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid ; */
+}
+
+
+/* Menu/Navegacao */
+.navbar {
+    background-color: #674582;
+  
+    position: fixed;
+    z-index: 999;
+
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 250px;  
+}
+
+.menu__itens {
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+}
+
+.itens_texto,
+.itens_icone {
+    list-style: none; 
+    display: none;
+}
+
+.itens_mobile {
+    list-style: none;
+}
+
+.logo, 
+.menu {
+    width: 45%;
+    /* border: 1px solid white; */
+}
+
+
+/* Header/Banner */
+.header {
+    background-image: url(../img/demi-lovato-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20% 20%; 
+
+    color: #fff;
+
+    height: 100vh; 
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header__titulo { 
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+
+/* Main : Conteudo Principal  */
+/* Chamada  */
+.main {    
+    text-align: center;
+    margin-top: 20px;
+    color: #63458A;
+    /* border: 1px solid; */
+}
+
+.main__chamada {
+    margin: 10px 0;
+
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: .60em;
+}
+
+
+/* Conteudo */
+.artista_foto {
+    background-color: #63458A;
+    border-radius: 5px;
+
+    width: 200px;  
+    margin: 0 auto;  
+}
+
+.artista_foto img {
+    max-width: 100%;
+    width: 80%; 
+
+    margin: 10px;
+    border-radius: 100%;
+
+    background-color: #63458A;
+}
+
+.artista_citacao {
+    border: 1px solid #63458A;
+    padding: 20px 0;
+
+    color: #63458A;
+    font-weight: bold;    
+}
+
+.artista_resumo, 
+.artista_historia {
+    text-align: justify;
+    font-size: 12px;
+
+    margin: 5px 0;
+    padding: 10px 0;
+    /* border: 1px solid red; */
+}
+
+.artista_destaque img {
+    max-width: 100%;
+    /* width: 400px;     */
+}
+
+
+/* Aside : Infos sobre mim  */
+.aside {
+    display: flex;
+    justify-content: center;
+
+    background-color: #E4B7E5;
+
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.aside__foto img {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.aside__infos {
+    font-size: 12px;   
+    font-weight: bold;
+    margin: 25px 10px;
+    color: #63458A;
+    /* border: 1px solid; */
+}
+
+.infos_itens {
+    list-style: none;
+}
+
+.itens_link a {
+    text-decoration: none;
+}
+
+
+/* Secao : Botao  */
+.secao {
+    text-align: center;
+
+    width: 90%;   
+    padding: 7.5%;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+}
+
+.grupo_btn {
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #fff;
+    background-color: #C083B9;
+
+    font-size: .75rem;
+    font-weight: bold;
+
+    border: 1px solid #C083B9;
+    border-radius: 5px; 
+    padding: 12.5px 15px;
+}
+
+
+    /* Footer/Rodape */
+    .footer {
+        background-color: #323534;
+        color: #fff;
+        font-weight: lighter;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .princ__coluna {
+        font-size: 9.5px;
+        padding: 10px 0;
+        /* border: 1px solid; */
+    }
+
+    .coluna_itens {
+        list-style: none;
+    }
+
+    .footer__logo img {
+        max-width: 100%;
+        width: 150px;
+    }
+
+    .footer__icone_fb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;    
+        /* border: 1px solid red; */
+    }
+
+    .footer__icone_fb img {
+        max-width: 100%;
+        width: 20px;
+    }
+
+    .footer__cc {
+        background-color: #292A2A;
+        height: 30px;
+        padding: 10px 0;
+    }
+
+    .cc_infos {
+        font-size: 8.5px;
+        /* border: 1px solid red; */
+    }
+
+
+/* [768px] : Tablet */
+@media (min-width: 768px) {
+    /* [768px] : Conteudo  */
+    .artista_foto, 
+    .artista_resumo {
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
+    }
+
+    .artista_foto {
+        width: 25%;
+        margin-bottom: 20px;
+    }
+
+    .artista_resumo {
+        margin: 2.5%;
+    }
+
+    .artista_destaque {
+        width: 100%;
+    }
+
+
+    /* [768px] : Secao */
+    .secao {
+        padding: 5%;
+    }
+}
+
+
+/* [1024px] : Desktop  */
+@media (min-width: 1024px) {
+    /* Container : Ajustes */
+    .ajs_container {
+        width: 65%;
+    }
+
+
+    /* [1024px] : Menu/Navegacao */
+    .navbar {
+        padding: 0 150px;
+    }
+
+    .menu, 
+    .menu__itens { 
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .itens_texto,
+    .itens_icone {
+        display: flex;
+        list-style: none;
+        margin: 0 7.5px; 
+    }
+
+    .itens_texto {
+        font-size: .65rem;
+        text-transform: uppercase;
+        color: #fff;
+        margin-left: 15x;
+    }
+
+    .itens_mobile {
+        display: none;
+    }
+
+
+    /* [1024px] : Conteudo  */
+    .artista_resumo {
+        font-size: 14px;
+    }
+
+    .artista_historia {
+        padding: 10px 0;
+    }
+
+    .historia_texto {
+        font-size: 14px;
+    }
+
+
+    /* [1024px] : Botao  */
+    .secao {
+        padding: 25px;
+    }
+    
+
+    /* [1024px] : Footer/Rodape */
+    .footer__princ {   
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        /* border: 1px solid blue;  */
+    }
+
+    .princ__coluna {
+        width: 33.3%;
+        /* border: 1px salmon solid; */
+    }
+}
