@@ -1,0 +1,155 @@
+/* Geral */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #e0c3fc, #8ec5fc);  
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0; 
+}
+
+
+/* Principais elementos da lista de tarefas */
+.tasklist {
+    width: 300px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #fff;
+}
+
+
+.taskslit__title {
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.title-page {
+   font-weight: bolder;
+}
+
+
+#addItem {
+    width:  300px;
+    height: 75px;
+
+    padding: 50px;
+    border-style: none;
+
+    overflow-wrap: break-word;
+}
+
+
+#addItem::placeholder {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+
+/* <div> : botões  */
+.tasklist__others-btn {
+    width: 300px;
+    border-top: 1px solid #fff; 
+
+    background-color: #fff;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Botões */
+.btn__add-item {
+    border: #ba7af8;
+    padding: 7.5px 134.25px;
+    
+    background-color: #ba7af8;
+    color: #fff;
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    letter-spacing: 1px;    
+}
+
+
+.group-others-btn {
+    padding: 7.5px 27.75px;
+    border: #8ec5fc;
+    
+    background-color: #e0c3fc;
+    color: #fff;
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    letter-spacing: 2.15px;
+}
+
+
+/* <div> tasklist__show */
+.tasklist-show {
+    width: 300px;
+    
+    background-color: #fff;
+}
+
+
+/* Elementos adicionados via JS */
+/* Mostrar itens */
+.tasklist-show__itens {
+    width: 300px;
+
+    padding: 10px;
+    border: 1px solid #F0F0F0;
+    
+    background-color: #fff;
+
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+    word-break: break-all;
+    cursor: pointer;
+}
+
+
+/* Mostrar itens + detalhes (<p> + <button>) */
+.tasklist-show__details {
+    height: 50px;
+
+    padding: 0 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.tasklist-show__btn__delete-item {
+    height: 20px;
+
+    border: none;
+    background-color: #fff;
+    
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.tasklist-show__p {
+    font-size: 13px;
+}
